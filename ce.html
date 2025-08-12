@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community Event Registration</title>
+    <link rel="stylesheet" href="ce.css">
+</head>
+<body>
+
+    <h1>Community Event Registration</h1>    
+    <h4>Join us for an amazing experience!</h4>
+
+    <form onsubmit="return validateForm()" novalidate>
+        <label>Name*</label><br/>
+        <input type="text" id="name"><br/><br/>
+
+        <label>Age*</label><br/>
+        <input type="number" id="age"><br/><br/>
+
+        <label>Phone No*</label><br/>
+        <input type="text" id="phone"><br/><br/>
+
+        <label>Email*</label><br/>
+        <input type="text" id="email"><br/><br/>
+
+        <label>Gender*</label>
+        <input type="radio" name="gender" value="Male">Male<br/>
+        <br/>
+        <input type="radio" name="gender" value="Female">Female<br/>
+        <br/>
+        <input type="radio" name="gender" value="Others">Others<br/><br/>
+
+        <label>Event*</label><br/>
+        <select id="event">
+            <option value="">Select</option>
+            <option>Workshop</option>
+            <option>Music</option>
+            <option>Dance</option>
+        </select><br/><br/>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="ce.js"></script>
+
+</body>
+</html>
